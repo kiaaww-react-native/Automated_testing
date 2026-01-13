@@ -13,8 +13,11 @@ describe('divide', () => {
         expect(() => divide(2, '1')).toThrow('Both arguments must be numbers');
     });
 
-    it('throws when arguments are NaN', () => {
+    it('throws when arguments are NaN (a is NaN)', () => {
         expect(() => divide(NaN, 1)).toThrow('Arguments cannot be NaN');
+    });
+
+        it('throws when arguments are NaN (b is NaN)', () => {
         expect(() => divide(2, NaN)).toThrow('Arguments cannot be NaN');
     });
 
