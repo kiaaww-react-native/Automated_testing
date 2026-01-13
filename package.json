@@ -1,0 +1,19 @@
+{
+  "name": "automated_testing",
+  "version": "1.0.0",
+  "type": "module",
+  "main": "index.js",
+  "scripts": {
+    "start": "node src/index.js",
+    "test": "node --experimental-vm-modules ./node_modules/jest/bin/jest.js",
+    "test:division": "node --experimental-vm-modules ./node_modules/jest/bin/jest.js --selectProjects division",
+    "test:initial": "node --experimental-vm-modules ./node_modules/jest/bin/jest.js --selectProjects initial"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "devDependencies": {
+    "jest": "^30.2.0"
+  }
+}
